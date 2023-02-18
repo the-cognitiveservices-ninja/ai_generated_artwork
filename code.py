@@ -8,10 +8,7 @@ import os
 from datetime import datetime
 
 # get API Key
-#yaml_file = open("apikeys/openai.yml", "r")
-#p = yaml.load(yaml_file, Loader=yaml.FullLoader)
-#openai.api_key = p["api_key"]
-
+openai.api_key = os.environ['OPENAI_API_KEY']
 
 def send_openai_request(engine, prompt, max_tokens=1000):
     response = openai.Completion.create(

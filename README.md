@@ -8,6 +8,11 @@ use davinci-003 to generate a prompt for dall-e to generate "hd-photos"
 
 ## example
 python code.py "frog with cigarette"  
+-->  
+generated prompt: "A sullen frog with a cigarette dangling from its mouth; its slimy skin is a murky shade of green, and its red eyes are filled with a mysterious intensity. It appears to be contemplating something deeply, as if it has a secret that no one knows." , HD photograph, nikon camera, studio lighting, on Kodak TriX film  
+
+-->  
+
 
 ![example image](images/example/0.png)
 

@@ -1,10 +1,12 @@
 # ai generated artwork
-use davinci-003 to generate a prompt for dall-e to generate "hd-photos"  
+use openai model davinci-003 to generate a prompt for dall-e to generate "hd-photos"  
 
-* api-key for openai is stored in repository secret OPENAI_API_KEY
+* clone repositiry
+* api-key for openai as a repository secret "OPENAI_API_KEY"
 * adust code.py to generate picture specific to your need
-* use in codespace
+* start a new codespace and a new terminal in your codespace
 * syntax: python code.py "describe your image"
+* find you images in subfolder images
 
 ## example
 python code.py "frog with cigarette"  

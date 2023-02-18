@@ -8,6 +8,14 @@ import os
 from datetime import datetime
 import sys
 
+# parameters - ajust to your needs
+number_of_images = 2
+image_size = "1024x1024"
+additional_keywords = (
+    ", HD photograph, nikon camera, studio lighting, on Kodak TriX film"
+)
+# parematers end - do not touch
+
 
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -26,10 +34,6 @@ def send_openai_request(engine, prompt, max_tokens=1000):
 
 prompt_base = "Generate a detailed Dall-E prompt with several adjectives for "
 prompt_details = sys.argv[1]
-additional_keywords = (
-    ", HD photograph, nikon camera, studio lighting, on Kodak TriX film"
-)
-
 model = "text-davinci-003"
 
 response = send_openai_request(model, prompt_base + prompt_details)
@@ -53,8 +57,6 @@ response = send_openai_request(model, prompt_base + prompt_details)
 
 
 generated_prompt = response["choices"][0]["text"]
-number_of_images = 2
-image_size = "1024x1024"
 image_generation_prompt = f"{generated_prompt} {additional_keywords}"
 
 response = openai.Image.create(

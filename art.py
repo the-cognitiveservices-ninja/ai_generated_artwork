@@ -1,3 +1,5 @@
+## Holger Imbery the@cognitiveservices.ninja
+## code based on Florian Follonier https://github.com/flo7up - https://github.com/flo7up/relataly-public-python-tutorials 
 import openai
 import urllib.request
 import matplotlib.image as mpimg
@@ -12,7 +14,7 @@ image_size = "1024x1024"
 additional_keywords = (
     ", HD photograph, nikon camera, studio lighting, on Kodak TriX film"
 )
-# parematers end - do not touch the rest
+# parameters end - do not touch the rest
 
 
 openai.api_key = os.environ["OPENAI_API_KEY"]

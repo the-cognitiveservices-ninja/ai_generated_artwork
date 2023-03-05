@@ -1,5 +1,8 @@
 # ai generated artwork
-use openai model davinci-003 to generate a prompt for dall-e to generate "hd-photos"  
+code based on work of Florian Follonier https://github.com/flo7up - https://github.com/flo7up/relataly-public-python-tutorials
+
+
+## use openai model davinci-003 to generate a prompt for dall-e to generate "hd-photos"  
 
 * clone repositiry
 * api-key for openai as a repository secret "OPENAI_API_KEY"
